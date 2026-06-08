@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Álbum de 4 Año - Liceo José Gil Fortoul</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fonts.css"/>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-image">
+        <div class="hero-overlay">
+          <h1>Capsula del tiempo</h1>
+          <h2>80 Años</h2>
+          <h2>Un Legado que Trasciende</h2>
+        </div>
+      </div>
+    </header>
+
+    <div class="big-dub">
+      <p>Celebrando ocho decadas de excelencia,dediccion y compromiso con la educacion gracias a cada docente,estudiante y familia que han sido parte de nuestra historia</p>
+    </div>
+
+    <main class="main">
+      <section id="inicio" class="panel">
+        <div class="train-wrap">
+          <div class="train">
+            <div class="engine"></div>
+            <button class="wagon wagon-a" onclick="abrirSeccion('A')">A</button>
+            <button class="wagon wagon-b" onclick="abrirSeccion('B')">B</button>
+            <button class="wagon wagon-c" onclick="abrirSeccion('C')">C</button>
+            <button class="wagon wagon-d" onclick="abrirSeccion('D')">D</button>
+            <button class="wagon wagon-e" onclick="abrirSeccion('E')">E</button>
+            <button class="wagon wagon-f" onclick="abrirSeccion('F')">F</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion" class="panel hidden">
+        <div class="search-box">
+          <h2 id="tituloSeccion">Sección</h2>
+          <input type="text" id="busqueda" placeholder="Buscar por número de lista o nombre" />
+          <button onclick="buscar()">Buscar</button>
+          <button onclick="mostrarTodos()">Mostrar todos</button>
+          <button class="cerrar" onclick="cerrarSeccion()">Cerrar sección</button>
+          <p id="mensajeError" class="mensaje-error hidden"></p>
+        </div>
+
+        <div id="contenedorAlumnos" class="cards"></div>
+      </section>
+    </main>
+  </div>
+
+<section class="cover-grid">
+  <div class="top-row">
+    <div class="box light"></div>
+    <div class="box mid"></div>
+    <div class="box light"></div>
+  </div>
+
+  <div class="nav-row">
+    <video class="nav-video" controls preload="metadata">
+      <source src="entrevistas-liceo PM.mp4" type="video/mp4" />
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+
+  <div class="small-bar">
+    <p>AGRADECIMIENTOS</p>
+  </div>
+  <div class="big-box">
+    <h5>Este proyecto fue posible gracias a la guía y coordinación de la Profesora: Joselith Herrera.  El desarrollo técnico estuvo a cargo de José Rondón  (Programación) y Gregory Ojeda (Desarrollador de la Web), mientras que el registro visual fue realizado por Barbara Rodriguez (Fotografías). La producción audiovisual y el soporte técnico fueron ejecutados por Manuel Vegas. Más que una página web, hemos construido una Cápsula del Tiempo que captura nuestra esencia(Un álbum digital), dejando un legado que trasciende el presente para acompañarnos mucho después de nuestra partida de estas aulas.También le damos las gracias a todos aquellos estudiantes  que ayudaron a hacer esto posible!
+    </h5>
+  </div>
+  <div class="bottom-bar"></div>
+</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
